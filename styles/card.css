@@ -1,0 +1,101 @@
+/* Adjusting Fixer Profile Container for Layout Improvements */
+
+    .fixer-profile {
+        display: flex;
+        flex-direction: column; /* Stack content vertically */
+        gap: 20px;
+        margin-bottom: 20px;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        height: 100%; /* Make sure the card takes full height */
+    }
+    .fixer-info {
+        flex: 1; /* Allow this section to grow */
+    }
+
+.fixer-profile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Fixer Image */
+.profile-picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+    margin-right: 15px;
+}
+
+/* Fixer Info Styling */
+.fixer-info {
+    flex: 1;
+}
+
+.fixer-info h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.rating {
+    font-size: 0.9rem;
+    color: #f4b400;
+    background-color: #fef6e4;
+    padding: 5px 10px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* Skill Tags */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.skill-tag {
+    background-color: #e9ecef;
+    color: #495057;
+    font-size: 0.8rem;
+    padding: 4px 8px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+p {
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.btnn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+.btnn:hover {
+    background-color: #0056b3;
+}
+
+/* Parent Container for Profiles */
+.fixers-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centers cards */
+    margin-top: 20px;
+}

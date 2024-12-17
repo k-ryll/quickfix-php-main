@@ -1,0 +1,189 @@
+/* profile.css */
+body{
+  background-color: black;
+}
+
+header{
+  background-color: white;
+}
+
+.user-profile-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 2rem;
+}
+
+.user-profile-panel {
+  background: var(--clr-bg);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.user-profile-panel img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  object-fit: cover;
+}
+
+.user-profile-panel h1 {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  color: var(--clr-primary);
+  font-weight: 500;
+}
+
+.user-profile-panel p {
+  margin: 0.5rem 0;
+  color: var(--clr-primary);
+  font-size: 0.9rem;
+}
+
+.user-details, .skills-section {
+  background: var(--clr-bg);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+
+.titles {
+  color: var(--clr-primary);
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.user-details div {
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.user-details span {
+  display: block;
+  color: var(--clr-secondary);
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+
+.user-details input {
+  width: 100%;
+  border: none;
+  font-size: 1rem;
+  color: var(--clr-primary);
+  padding: 0.2rem 0;
+  font-family: "Poppins", sans-serif;
+  background: transparent;
+}
+
+.user-details input:focus {
+  outline: none;
+}
+
+textarea.aboutMe {
+  width: 100%;
+  min-height: 100px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  color: var(--clr-primary);
+  background: transparent;
+  padding: 0;
+}
+
+textarea.aboutMe:focus {
+  outline: none;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: var(--clr-bg);
+  margin: 10% auto;
+  padding: 2rem;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  right: 1.5rem;
+  top: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--clr-secondary);
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-form h2 {
+  margin-bottom: 1.5rem;
+  color: var(--clr-primary);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.booking-form label {
+  margin-bottom: 0.5rem;
+  color: var(--clr-secondary);
+  font-size: 0.9rem;
+}
+
+.booking-form input,
+.booking-form textarea {
+  margin-bottom: 1.5rem;
+  padding: 0.75rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  background-color: var(--clr-primary);
+  color: var(--clr-bg);
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .user-profile-container {
+      grid-template-columns: 1fr;
+      padding: 1rem;
+  }
+  
+  .modal-content {
+      width: 95%;
+      margin: 5% auto;
+  }
+}
